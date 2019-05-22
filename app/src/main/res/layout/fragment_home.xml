@@ -19,7 +19,7 @@
 
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/view1"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/cerchioparametri"
-                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintBottom_toTopOf="@+id/view1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
@@ -175,7 +175,7 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/notifiche"
-                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintBottom_toTopOf="@+id/view1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.189"
                 app:layout_constraintStart_toStartOf="parent"
@@ -198,7 +198,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.462"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
                 app:layout_constraintVertical_bias="0.602" />
 
             <TextView
@@ -262,7 +262,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.191"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view1"
                 app:layout_constraintVertical_bias="0.037" />
 
             <ImageButton
@@ -298,7 +298,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.157"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
                 app:layout_constraintVertical_bias="0.659" />
 
             <TextView
