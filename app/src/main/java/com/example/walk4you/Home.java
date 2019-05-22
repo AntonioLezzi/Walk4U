@@ -56,16 +56,15 @@ public class Home extends AppCompatActivity implements OnFragmentInteractionList
                         return false;
 
                 }
-
             }
 
         });
 
-
     }
-
     @Override
     public void onFragmentInteraction(Uri uri) {
-
     }
+
+
+
 }
