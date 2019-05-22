@@ -214,12 +214,13 @@
                 app:srcCompat="@drawable/livello10" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="79dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="1676dp"
-                android:layout_marginEnd="164dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/button5"
+                android:layout_width="39dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="336dp"
+                android:background="@drawable/back"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSfidaG"
                 app:layout_constraintTop_toTopOf="parent" />
 
 

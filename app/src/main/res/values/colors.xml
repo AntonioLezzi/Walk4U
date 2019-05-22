@@ -3,8 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#71c5c5</color>
     <color name="colorAccent">#C218C5C5</color>
-    <color name="colorPrimaryLogin">#EE7128</color>
-    <color name="colorPrimaryDarkLogin">#303F9F</color>
+    <color name="colorPrimaryLogin">#218C8D</color>
+    <color name="colorPrimaryDarkLogin">#EE7128</color>
     <color name="colorAccentLogin">#FF4081</color>
     <color name="dark_blue">#71c5c5</color>
     <color name="purple">#c86dd7</color>
