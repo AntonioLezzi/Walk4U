@@ -23,15 +23,13 @@
                 android:layout_width="0dp"
                 android:layout_height="1dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="284dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:background="#000"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.472" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -46,7 +44,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/cerchioparametri"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
@@ -121,19 +119,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="256dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/assistant_semibold"
                 android:text="4 aprile 2077"
                 android:textColor="#218C8D"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.404" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/imageButton5"
@@ -180,12 +175,12 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/notifiche"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/view"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.203"
+                app:layout_constraintHorizontal_bias="0.189"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.339" />
+                app:layout_constraintVertical_bias="0.847" />
 
             <ImageButton
                 android:id="@+id/imageButtonInfo"
@@ -199,12 +194,12 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/infoattivita"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageButtonPasti"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintHorizontal_bias="0.462"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view"
-                app:layout_constraintVertical_bias="0.125" />
+                app:layout_constraintVertical_bias="0.602" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -213,6 +208,7 @@
                 android:fontFamily="@font/assistant_semibold"
                 android:text="2.5 Km"
                 android:textColor="@color/colorWhite"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageButtonInfo"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonInfo"
                 app:layout_constraintHorizontal_bias="0.241"
@@ -228,7 +224,7 @@
                 android:fontFamily="@font/assistant_semibold"
                 android:text="75 bpm"
                 android:textColor="@color/colorWhite"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageButtonInfo"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonInfo"
                 app:layout_constraintHorizontal_bias="0.932"
@@ -243,6 +239,7 @@
                 android:fontFamily="@font/assistant_semibold"
                 android:text="0:45:30"
                 android:textColor="@color/colorWhite"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageButtonInfo"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonInfo"
                 app:layout_constraintHorizontal_bias="0.241"
@@ -263,29 +260,26 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.205"
+                app:layout_constraintHorizontal_bias="0.191"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/view"
-                app:layout_constraintVertical_bias="0.042" />
+                app:layout_constraintVertical_bias="0.037" />
 
             <ImageButton
                 android:id="@+id/imageButtonPasti"
                 android:layout_width="315dp"
                 android:layout_height="74dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="448dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/pasti"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.462"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.795" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -300,85 +294,62 @@
                 android:text="Pasti"
                 android:textColor="#94CA99"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonPasti"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintHorizontal_bias="0.157"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view"
-                app:layout_constraintVertical_bias="0.407" />
+                app:layout_constraintVertical_bias="0.659" />
 
             <TextView
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/assistant_semibold"
                 android:text="2354 Kcal"
                 android:textColor="@color/colorWhite"
-                android:textSize="22sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButtonPasti"
+                android:textSize="45sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageButtonSonno"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonPasti"
-                app:layout_constraintHorizontal_bias="0.336"
+                app:layout_constraintHorizontal_bias="0.676"
                 app:layout_constraintStart_toStartOf="@+id/imageButtonPasti"
-                app:layout_constraintTop_toTopOf="@+id/imageButtonPasti"
-                app:layout_constraintVertical_bias="0.75" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/assistant_semibold"
-                android:text="75 kG"
-                android:textColor="@color/colorWhite"
-                android:textSize="35sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButtonPasti"
-                app:layout_constraintEnd_toEndOf="@+id/imageButtonPasti"
-                app:layout_constraintHorizontal_bias="0.905"
-                app:layout_constraintStart_toStartOf="@+id/imageButtonPasti"
-                app:layout_constraintTop_toTopOf="@+id/imageButtonPasti"
-                app:layout_constraintVertical_bias="0.523" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonInfo"
+                app:layout_constraintVertical_bias="0.386" />
 
             <ImageButton
                 android:id="@+id/imageButtonSonno"
                 android:layout_width="313dp"
                 android:layout_height="73dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="48dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/sonno"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.475"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonPasti"
-                app:layout_constraintVertical_bias="0.84" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="38dp"
-                android:layout_height="57dp"
-                android:text="8"
-                android:textColor="@color/colorWhite"
-                android:textSize="50sp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButtonSonno"
-                app:layout_constraintEnd_toEndOf="@+id/imageButtonSonno"
-                app:layout_constraintHorizontal_bias="0.4"
-                app:layout_constraintStart_toStartOf="@+id/imageButtonSonno"
-                app:layout_constraintTop_toTopOf="@+id/imageButtonSonno"
-                app:layout_constraintVertical_bias="0.187" />
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonPasti" />
 
             <TextView
                 android:id="@+id/textView24"
-                android:layout_width="99dp"
-                android:layout_height="30dp"
+                android:layout_width="113dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/assistant_semibold"
                 android:text="Ore di sonno questa notte"
                 android:textColor="@color/colorWhite"
-                android:textSize="12sp"
-                tools:layout_editor_absoluteX="196dp"
-                tools:layout_editor_absoluteY="672dp" />
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonSonno"
+                app:layout_constraintEnd_toEndOf="@+id/imageButtonSonno"
+                app:layout_constraintHorizontal_bias="0.785"
+                app:layout_constraintStart_toStartOf="@+id/imageButtonSonno"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonPasti"
+                app:layout_constraintVertical_bias="0.901" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -392,13 +363,88 @@
                 android:text="Sonno"
                 android:textColor="#71C5C5"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintHorizontal_bias="0.163"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.881" />
+                app:layout_constraintVertical_bias="0.829" />
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/assistant_extrabold"
+                android:text="Premi"
+                android:textColor="#F9E558"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.173"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSonno" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="313dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.451"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSonno"
+                app:srcCompat="@drawable/premi" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="128dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="1250"
+                android:textColor="@color/colorWhite"
+                android:textSize="45sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+                app:layout_constraintHorizontal_bias="0.681"
+                app:layout_constraintStart_toStartOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonSonno" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="8dp"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textViewOtto"
+                android:layout_width="24dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="8"
+                android:textColor="@color/colorWhite"
+                android:textSize="45sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+                app:layout_constraintEnd_toEndOf="@+id/imageButtonSonno"
+                app:layout_constraintHorizontal_bias="0.429"
+                app:layout_constraintStart_toStartOf="@+id/imageButtonSonno"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonPasti"
+                app:layout_constraintVertical_bias="0.408" />
 
         </android.support.constraint.ConstraintLayout>
 
