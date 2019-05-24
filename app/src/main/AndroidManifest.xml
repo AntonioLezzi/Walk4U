@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".infoAttivita"></activity>
+        <activity android:name=".Premi"></activity>
+        <activity android:name=".Sonno" />
+        <activity android:name=".Pasti" />
+        <activity android:name=".infoAttivita" />
         <activity android:name=".QRcode1" />
         <activity android:name=".Livelli" />
         <activity

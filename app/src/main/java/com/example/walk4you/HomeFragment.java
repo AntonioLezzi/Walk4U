@@ -2,6 +2,7 @@ package com.example.walk4you;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -32,9 +33,53 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        inflater.inflate(R.layout.fragment_home, container, false);
 
-        ImageButton imageButtonPremi =(ImageButton) view.findViewById(R.id.imageButtonlivello);
-        imageButtonPremi.setOnClickListener(new View.OnClickListener() {
+        ImageButton imageButtonInfo1 =(ImageButton) view.findViewById(R.id.imageButtonInfo);
+        ImageButton imageButtonPasti1 =(ImageButton) view.findViewById(R.id.imageButtonPasti);
+        ImageButton imageButtonSonno1 =(ImageButton) view.findViewById(R.id.imageButtonSonno);
+        ImageButton imageButtonLivello1 =(ImageButton) view.findViewById(R.id.imageButtonlivello);
+        ImageButton imageButtonPremi1 =(ImageButton) view.findViewById(R.id.imageButtonPremi);
+
+
+        //activity Premi
+        imageButtonPremi1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent(getActivity(), Premi.class);
+                startActivity(in);
+            }
+        });
+
+        //activity Sonno
+        imageButtonSonno1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent(getActivity(), Sonno.class);
+                startActivity(in);
+            }
+        });
+
+
+        //activity pasti
+        imageButtonPasti1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent(getActivity(), Pasti.class);
+                startActivity(in);
+            }
+        });
+
+        //activity Info Attività
+        imageButtonInfo1.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick (View v) {
+                    Intent in = new Intent(getActivity(), infoAttivita.class);
+                    startActivity(in);
+                }
+                });
+        //activity Livelli
+        imageButtonLivello1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -45,6 +90,8 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
+
 
 
     @Override
@@ -63,6 +110,7 @@ public class HomeFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
 
 
 
