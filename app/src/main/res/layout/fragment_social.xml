@@ -15,11 +15,79 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/bgpertuttoilresto1"
             android:focusableInTouchMode="true">
 
 
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="8dp"
+                android:background="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Classifica"
+                android:textColor="@color/colorPrimaryDarkLogin"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageViewuser"
+                android:layout_width="312dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profilo" />
+
+            <ImageView
+                android:id="@+id/imageViewpos1"
+                android:layout_width="312dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="252dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/primopostoclassifica" />
+
+            <ImageView
+                android:id="@+id/imageViewsecondo"
+                android:layout_width="312dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="380dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/secondoposto1" />
+
+            <ImageView
+                android:id="@+id/imageViewterzo"
+                android:layout_width="312dp"
+                android:layout_height="128dp"
+                android:layout_marginBottom="136dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/terzoposto2" />
         </android.support.constraint.ConstraintLayout>
 
 
