@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ImageButton imageButtonPremi =(ImageButton) view.findViewById(R.id.imageButtonPremi);
+        ImageButton imageButtonPremi =(ImageButton) view.findViewById(R.id.imageButtonlivello);
         imageButtonPremi.setOnClickListener(new View.OnClickListener() {
 
             @Override
