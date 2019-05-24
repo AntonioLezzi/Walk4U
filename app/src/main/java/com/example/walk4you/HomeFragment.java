@@ -35,6 +35,7 @@ public class HomeFragment extends Fragment {
 
         ImageButton imageButtonPremi =(ImageButton) view.findViewById(R.id.imageButtonPremi);
         imageButtonPremi.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(getActivity(),Livelli.class);
@@ -44,6 +45,7 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
 
     @Override
     public void onAttach(Context context) {

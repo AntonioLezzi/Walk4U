@@ -22,7 +22,7 @@
                 android:layout_width="377dp"
                 android:layout_height="142dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="48dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.555"
@@ -35,14 +35,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/assistant_extrabold"
                 android:text="Sfida Giornaliera"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintHorizontal_bias="0.078"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +50,7 @@
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="224dp"
+                android:layout_marginTop="204dp"
                 android:layout_marginEnd="328dp"
                 android:fontFamily="@font/assistant_extrabold"
                 android:text="Livelli"
@@ -63,13 +63,13 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="108dp"
+                android:layout_marginTop="92dp"
                 android:fontFamily="@font/assistant_semibold"
                 android:text="Mangia 5 porzioni di verdure"
                 android:textColor="@color/colorWhite"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageViewSfidaG"
-                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintHorizontal_bias="0.672"
                 app:layout_constraintStart_toStartOf="@+id/imageViewSfidaG"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,13 +77,13 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="132dp"
                 android:fontFamily="@font/assistant_semibold"
                 android:text="Scade tra: 05:20:56"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageViewSfidaG"
-                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintHorizontal_bias="0.56"
                 app:layout_constraintStart_toStartOf="@+id/imageViewSfidaG"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -212,16 +212,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/livello10" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="39dp"
-                android:layout_height="37dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="336dp"
-                android:background="@drawable/back"
-                app:layout_constraintEnd_toEndOf="@+id/imageViewSfidaG"
-                app:layout_constraintTop_toTopOf="parent" />
 
 
         </android.support.constraint.ConstraintLayout>

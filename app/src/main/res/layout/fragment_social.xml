@@ -127,47 +127,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view" />
 
-            <ImageButton
-                android:id="@+id/imageButtonOfferta1"
-                android:layout_width="338dp"
-                android:layout_height="231dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="64dp"
-                android:layout_marginEnd="8dp"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.473"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view"
-                app:srcCompat="@drawable/offerta1" />
-
-            <ImageButton
-                android:id="@+id/imageButtonOfferta2"
-                android:layout_width="338dp"
-                android:layout_height="231dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="720dp"
-                android:layout_marginEnd="8dp"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.473"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/offerta2" />
-
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="956dp"
-                android:layout_marginEnd="8dp"
                 android:text="Button"
-                app:layout_constraintEnd_toEndOf="@+id/imageButtonOfferta2"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="274dp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonOfferta1"
+                android:layout_width="387dp"
+                android:layout_height="239dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="448dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/offerta111" />
+
+            <ImageButton
+                android:id="@+id/imageButtonOfferta2"
+                android:layout_width="334dp"
+                android:layout_height="236dp"
+                android:layout_marginTop="704dp"
+                android:layout_marginEnd="24dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/offerta222" />
+
         </android.support.constraint.ConstraintLayout>
 
 

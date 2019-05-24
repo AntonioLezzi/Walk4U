@@ -1,12 +1,14 @@
 package com.example.walk4you;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 public class SocialFragment extends Fragment {
@@ -27,7 +29,19 @@ public class SocialFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_social, container, false);
+        View view = inflater.inflate(R.layout.fragment_social, container, false);
+
+        ImageButton imageButtonPremi =(ImageButton) view.findViewById(R.id.imageButtonOfferta1);
+        imageButtonPremi.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),QRcode1.class);
+                startActivity(in);
+            }
+        });
+
+        return view;
     }
 
     @Override
