@@ -9,13 +9,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff"
+        android:background="#fff"
         tools:context=".HomeFragment">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:focusableInTouchMode="true">
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bgpertuttoilresto1">
 
             <ImageView
                 android:id="@+id/imageViewcerchio1"
@@ -324,7 +325,7 @@
                 android:layout_width="377dp"
                 android:layout_height="142dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="816dp"
+                android:layout_marginTop="808dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/consigli1" />
@@ -341,6 +342,8 @@
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+
 
         </android.support.constraint.ConstraintLayout>
 
