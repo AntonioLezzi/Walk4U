@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:focusableInTouchMode="true"
-            android:background="@drawable/bgpertuttoilresto1">
+            android:background="@drawable/sfondoazzurro">
 
             <ImageView
                 android:id="@+id/imageViewcerchio1"
@@ -168,7 +168,7 @@
                 android:layout_width="190dp"
                 android:layout_height="76dp"
                 android:layout_marginStart="152dp"
-                android:layout_marginTop="384dp"
+                android:layout_marginTop="396dp"
                 android:fontFamily="@font/assistant_semibold"
                 android:text="Crediti Guadagnati Questa settimana"
                 android:textColor="@color/colorPrimaryLogin"
@@ -342,7 +342,6 @@
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
 
 
         </android.support.constraint.ConstraintLayout>

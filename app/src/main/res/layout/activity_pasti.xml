@@ -1,10 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pasti"
-    android:background="@drawable/bgpertuttoilresto1">
+    android:fillViewport="true">
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".HomeFragment">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sfondoazzurro"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="792dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Proteine"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="352dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="4 aprile 2077"
+                android:textColor="#218C8D"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="392dp"
+                android:layout_marginEnd="8dp"
+                android:background="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="692dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewListNut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="700dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Lista nutrienti"
+                android:textColor="@color/colorPrimaryDarkLogin"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="Pasti"
+                android:textColor="@color/colorPrimaryDarkLogin"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/CerchioParametriSX"
+                android:layout_width="162dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cerchioparametri" />
+
+            <ImageView
+                android:id="@+id/CerchioParametriDX"
+                android:layout_width="162dp"
+                android:layout_height="132dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="52dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cerchioparametri" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="150"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="@+id/CerchioParametriSX"
+                app:layout_constraintTop_toTopOf="@+id/CerchioParametriSX" />
+
+            <ImageView
+                android:id="@+id/cerchioParametriGiallo"
+                android:layout_width="162dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="196dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cerchiocrediti" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="2354"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="@+id/CerchioParametriDX"
+                app:layout_constraintTop_toTopOf="@+id/CerchioParametriDX" />
+
+            <TextView
+                android:id="@+id/textViewCalorieAssunte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Calorie Assunte"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/CerchioParametriDX"
+                app:layout_constraintTop_toTopOf="@+id/CerchioParametriDX" />
+
+            <TextView
+                android:id="@+id/textViewCalorieBruciate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Calorie bruciate"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/CerchioParametriSX"
+                app:layout_constraintTop_toTopOf="@+id/CerchioParametriSX" />
+
+            <TextView
+                android:id="@+id/textViewsettantacinque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="75"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="45sp"
+                app:layout_constraintStart_toStartOf="@+id/cerchioParametriGiallo"
+                app:layout_constraintTop_toTopOf="@+id/cerchioParametriGiallo" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="64dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Kg"
+                android:textColor="@color/colorPrimaryLogin"
+                app:layout_constraintStart_toStartOf="@+id/cerchioParametriGiallo"
+                app:layout_constraintTop_toTopOf="@+id/cerchioParametriGiallo" />
+
+            <ImageView
+                android:id="@+id/imageViewColazione"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7"
+                app:srcCompat="@drawable/colazione" />
+
+            <ImageView
+                android:id="@+id/imageViewPranozo"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="88dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7"
+                app:srcCompat="@drawable/pranzo" />
+
+            <ImageView
+                android:id="@+id/imageViewcena"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="160dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7"
+                app:srcCompat="@drawable/cena" />
+
+            <ImageView
+                android:id="@+id/imageViewsnack"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="92dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7"
+                app:srcCompat="@drawable/snack" />
+
+            <TextView
+                android:id="@+id/textViewPranz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="124dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Pranzo"
+                android:textColor="@color/colorPrimaryLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textViewCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="260dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Cena"
+                android:textColor="@color/colorPrimaryLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textViewSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="260dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Snack"
+                android:textColor="@color/colorPrimaryLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textViewCOla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="124dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Colazione"
+                android:textColor="@color/colorPrimaryLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Zuccheri"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="216dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Vitamine"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="176dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Grassi"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="748dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Carboidrati"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="50 G"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="50 G"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="176dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="50 G"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="50 G"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="212dp"
+                android:layout_marginEnd="100dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="50 G"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </FrameLayout>
+</ScrollView>

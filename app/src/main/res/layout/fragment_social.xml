@@ -15,7 +15,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bgpertuttoilresto1"
+            android:background="@drawable/bgperloadingehome1"
             android:focusableInTouchMode="true">
 
 
@@ -82,11 +82,11 @@
                 android:id="@+id/imageViewterzo"
                 android:layout_width="312dp"
                 android:layout_height="128dp"
-                android:layout_marginBottom="136dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="508dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/terzoposto2" />
         </android.support.constraint.ConstraintLayout>
 
