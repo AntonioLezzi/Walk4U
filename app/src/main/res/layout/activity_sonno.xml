@@ -7,6 +7,18 @@
     android:background="@drawable/sfondoazzurro"
     tools:context=".Sonno">
 
+    <com.example.walk4you.CircleTimerView
+        android:id="@+id/circletimerview"
+        android:layout_width="319dp"
+        android:layout_height="348dp"
+        android:layout_margin="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
@@ -24,7 +36,7 @@
         android:id="@+id/textView53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/assistant_bold"
         android:text="Sonno"
