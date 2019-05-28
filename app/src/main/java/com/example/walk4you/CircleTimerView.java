@@ -43,21 +43,21 @@ public class CircleTimerView extends View {
 
     // Default dimension in dp/pt
     private static final float DEFAULT_GAP_BETWEEN_CIRCLE_AND_LINE = 30;
-    private static final float DEFAULT_NUMBER_SIZE = 10;
+    private static final float DEFAULT_NUMBER_SIZE = 30;
     private static final float DEFAULT_LINE_WIDTH = 0.5f;
-    private static final float DEFAULT_CIRCLE_BUTTON_RADIUS = 15;
+    private static final float DEFAULT_CIRCLE_BUTTON_RADIUS =10;
     private static final float DEFAULT_CIRCLE_STROKE_WIDTH = 1;
     private static final float DEFAULT_TIMER_NUMBER_SIZE = 38;
     private static final float DEFAULT_TIMER_TEXT_SIZE = 18;
 
     // Default color
     private static final int DEFAULT_CIRCLE_COLOR = 0xFFFF0000;
-    private static final int DEFAULT_CIRCLE_BUTTON_COLOR = 0xFFFFFFFF; //COLORE PALLINO 2
+    private static final int DEFAULT_CIRCLE_BUTTON_COLOR = 0xFF71C5C5; //COLORE PALLINO 2
     private static final int DEFAULT_LINE_COLOR = 0xFF218C8D; //COLORE LINEA EVIDENZIATA (GIALLO)
     private static final int DEFAULT_HIGHLIGHT_LINE_COLOR = 0xFF68C5D7;
     private static final int DEFAULT_NUMBER_COLOR = 0xFFF9E558;  //COLORE CIRCOFERENZA BASE
     private static final int DEFAULT_TIMER_NUMBER_COLOR = 0xFF218C8D; //COLORE SCRITTA
-    private static final int DEFAULT_TIMER_COLON_COLOR = 0xFF218C8D; //COLORE PUNTINI
+    private static final int DEFAULT_TIMER_COLON_COLOR = 0xFF71C5C5; //COLORE PUNTINI
     private static final int DEFAULT_TIMER_TEXT_COLOR = 0xFFFFFFFF;
 
     // Paint
@@ -69,6 +69,7 @@ public class CircleTimerView extends View {
     private Paint mTimerNumberPaint;
     private Paint mTimerTextPaint;
     private Paint mTimerColonPaint;
+
 
     // Dimension
     private float mGapBetweenCircleAndLine;

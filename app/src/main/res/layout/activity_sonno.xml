@@ -23,8 +23,8 @@
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="584dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="412dp"
         android:fontFamily="@font/assistant_semibold"
         android:text="Qualità sonno"
         android:textColor="@color/colorPrimaryLogin"
@@ -39,7 +39,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/assistant_bold"
-        android:text="Sonno"
+        android:text="Ore di sonno"
         android:textColor="@color/colorPrimaryDarkLogin"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,13 +54,15 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="656dp"
+        android:layout_marginTop="468dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/pulsantegiallo"
         android:numStars="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:progressTint="@color/colorWhite"
+        android:progressBackgroundTint="#000000"/>
 
 </android.support.constraint.ConstraintLayout>
