@@ -31,6 +31,7 @@ public class Home extends AppCompatActivity implements OnFragmentInteractionList
         fragmentMaps = new MapsFragment();
 
         mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+        mMainNav.setSelectedItemId(R.id.Nav_Home);
 
         getFragmentManager().beginTransaction().add(R.id.main_frame, fragmentHome).commit();
 
