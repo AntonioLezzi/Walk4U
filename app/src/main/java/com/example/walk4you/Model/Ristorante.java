@@ -1,14 +1,11 @@
 package com.example.walk4you.Model;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 
 import java.util.Date;
 
-@Entity
+
 public class Ristorante {
 
-    @PrimaryKey(autoGenerate = true)
     private int id_ristorante;
     private double latitudine;
     private double longitudine;

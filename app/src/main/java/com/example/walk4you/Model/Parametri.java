@@ -1,14 +1,11 @@
 package com.example.walk4you.Model;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 
 import java.util.Date;
 
-@Entity
+
 public class Parametri {
 
-    @PrimaryKey (autoGenerate = true)
     private int id_parametri;
     private int peso;
     private int battito_cardiaco;

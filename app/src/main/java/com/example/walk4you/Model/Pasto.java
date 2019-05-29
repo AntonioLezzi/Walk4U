@@ -1,15 +1,12 @@
 package com.example.walk4you.Model;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 
 import java.util.Date;
 
 
-@Entity
+
 public class Pasto {
 
-    @PrimaryKey(autoGenerate = true)
     private int id_pasto;
     private boolean cena;
     private boolean colazione;

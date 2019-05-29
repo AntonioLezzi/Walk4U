@@ -8,8 +8,13 @@ package com.example.walk4you;
         import android.widget.Button;
         import android.content.Intent;
 
+        import com.example.walk4you.Adapter.ContactDBAdapter;
+
 public class MainActivity extends AppCompatActivity {
     private Button button;
+
+
+    final ContactDBAdapter db = new ContactDBAdapter(this);
 
 
     @Override

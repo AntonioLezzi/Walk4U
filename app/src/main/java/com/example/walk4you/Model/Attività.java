@@ -1,16 +1,11 @@
 package com.example.walk4you.Model;
 
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.ForeignKey;
-import android.arch.persistence.room.PrimaryKey;
-
 import java.util.Date;
 
-@Entity
+
 public class Attività {
 
-    @PrimaryKey (autoGenerate = true)
     private int id_attività;
     private int numero_passi;
     private Date data_inizio;
@@ -42,7 +37,7 @@ public class Attività {
 
     public Date getData_fine() {
         return data_fine;
-    }
+}
 
     public void setData_fine(Date data_fine) {
         this.data_fine = data_fine;

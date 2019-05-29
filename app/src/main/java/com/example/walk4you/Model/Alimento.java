@@ -1,12 +1,9 @@
 package com.example.walk4you.Model;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
 
-@Entity
+
 public class Alimento {
 
-    @PrimaryKey (autoGenerate = true)
     private int id_alimento;
     private String nome;
     private double grassi;
