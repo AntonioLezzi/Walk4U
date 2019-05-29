@@ -1,5 +1,6 @@
 package com.example.walk4you.Model;
 
+
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.PrimaryKey;
