@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
 
 
-    final ContactDBAdapter db = new ContactDBAdapter(this);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

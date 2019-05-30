@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.walk4you.util.MyApp;
+
 import static com.example.walk4you.util.Constants.*;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
@@ -14,30 +16,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static DatabaseHelper databaseHelper;
 
+    public DatabaseHelper () {
+        super(MyApp.context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
 
-    private static final String CREATE_TABELLA_UTENTE = "CREATE TABLE " +  TABELLA_UTENTE + "("
-            + MAIL + "INTEGER PRIMARY KEY,"
-            + NOME + "TEXT"
-            + COGNOME + "TEXT"
-            + PASSWORD + "TEXT"
-            + ALTEZZA +"NUMRO"
-            + SESSO + "TEXT"
-            + DATA_NASCITA + "DATA" + ")";
+    public static DatabaseHelper getInstance() {
 
-    public DatabaseHelper (Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        if (databaseHelper == null) {
+            synchronized (DatabaseHelper.class){ //thread safe singleton
+                if (databaseHelper == null)
+                    databaseHelper = new DatabaseHelper();
+            }
+        }
+
+        return databaseHelper;
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATE_TABELLA_UTENTE);
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+
+         String CREATE_TABELLA_UTENTE = "CREATE TABLE " + TABELLA_UTENTE + "("
+                + MAIL + "INTEGER PRIMARY KEY,"
+                + NOME + "TEXT NOT NULL,"
+                + COGNOME + "TEXT NOT NULL,"
+                + PASSWORD + "TEXT NOT NULL,"
+                + ALTEZZA + "NUMRO"
+                + SESSO + "TEXT"
+                + DATA_NASCITA + "DATA" + ")";
+
+        sqLiteDatabase.execSQL(CREATE_TABELLA_UTENTE);
     }
+
 
     @Override
     public void onUpgrade (SQLiteDatabase db, int oldVersion, int newVersion){
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_UTENTE );
 
         onCreate(db);
+    }
+
+    @Override
+    public void onOpen (SQLiteDatabase db) {
+        super.onOpen(db);
+
+        db.execSQL("PRAGMA foreign_keys=ON");
     }
 
 
