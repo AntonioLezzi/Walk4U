@@ -23,7 +23,7 @@ public class ContactDBAdapter {
     }
 
     public ContactDBAdapter open() throws  SQLException {
-    dbHelper = new DatabaseHelper(context);
+    dbHelper = new DatabaseHelper();
     database = dbHelper.getWritableDatabase();
 
     return this;
