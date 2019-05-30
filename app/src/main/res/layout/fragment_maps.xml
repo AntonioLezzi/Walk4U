@@ -55,10 +55,14 @@
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
             android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="408dp"
-            android:layout_height="406dp"
-            android:layout_marginTop="128dp"
+            android:layout_width="415dp"
+            android:layout_height="369dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".Mappa" />
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>
