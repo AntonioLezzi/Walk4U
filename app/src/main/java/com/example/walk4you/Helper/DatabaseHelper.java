@@ -36,8 +36,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
          String CREATE_TABELLA_UTENTE = "CREATE TABLE " + TABELLA_UTENTE + "("
-                + MAIL + " INTEGER PRIMARY KEY,"
-                + ID_UTENTE + " NUMERO"
+                + MAIL + " TEXT PRIMARY KEY,"
+                + ID_UTENTE + " INTEGER"
                 + NOME + " TEXT NOT NULL,"
                 + COGNOME + " TEXT NOT NULL,"
                 + PASSWORD + " TEXT NOT NULL,"
@@ -48,35 +48,35 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
          String CREATE_TABELLA_NUTRIENTI = "CREATE TABLE " + TABELLA_NUTRIENTI + "("
                  + ID_NUTRIENTI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                 + GRASSI_SATURI + " NUMERO"
-                 + FIBRE + " NUMERO "
-                 + PROTEINE + " NUMERO"
-                 + POTASSIO + " NUMERO"
-                 + FERRO + " NUMERO"
-                 + VITAMINA_A + " NUMERO"
-                 + VITAMINA_C + " NUMERO"
-                 + SODIO + " NUMERI"
+                 + GRASSI_SATURI + " FLOAT"
+                 + FIBRE + " FLOAT "
+                 + PROTEINE + " FLOAT"
+                 + POTASSIO + " FLOAT"
+                 + FERRO + " FLOAT"
+                 + VITAMINA_A + " FLOAT"
+                 + VITAMINA_C + " FLOAT"
+                 + SODIO + " FLOAT"
                  + ")";
 
          String CREATE_TABELLA_ALIMENTI = "CREATE TABLE " + TABELLA_ALIMENTI + "("
-                 + ID_ALIMENTI + "TEXT PRIMARY KEY AUTOINCREMENT,"
+                 + ID_ALIMENTI + "INTEGER PRIMARY KEY AUTOINCREMENT,"
                  + INGREDIENTI + "TEXT "
-                 +CODICE_A_BARRE + "TEXT"
+                 +CODICE_A_BARRE + "INTEGER"
                  + ")";
 
          String CREATE_TABELLA_RISTORANTI = "CREATE TABLE " + TABELLA_RISTORANTI + "("
-                + ID_RISTORANTE + " TEXT PRIMARY KEY AUTOINCREMENT,"
+                + ID_RISTORANTE + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + TIPOLOGIA_RISTORANTE + " TEXT"
                 + DESCRIZIONE + " TEXT"
-                + POSIZIONE_GPS + " TEXT"
+                + POSIZIONE_GPS + " INTEGER NOT NULL"
                 + ")";
 
          String CREATE_TABELLA_PREMI = "CREATE TABLE" + TABELLA_PREMI + "("
-                 + ID_PREMI + " TEXT PRIMARY KEY AUTOINCREMENT,"
+                 + ID_PREMI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                  + QR_CODE + " NUMERI"
-                 + NOME_PREMIO + " TEXT"
-                 + PUNTEGGIO_PREMI + " NUMERO"
-                 + LIVELLO_PREMI + " NUMERO"
+                 + NOME_PREMIO + " TEXT NOT NULL,"
+                 + PUNTEGGIO_PREMI + " INTEGER NOT NULL,"
+                 + LIVELLO_PREMI + " INTEGER NOT NULL,"
                  + ")";
 
 

@@ -1,6 +1,7 @@
 
 package com.example.walk4you;
 
+        import android.os.Handler;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -11,8 +12,7 @@ package com.example.walk4you;
         import com.example.walk4you.Adapter.ContactDBAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-
+    int timeout = 3000;
 
 
     @Override
@@ -20,16 +20,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                openActivityLog();
+            public void run() {
+                Intent i = new Intent(MainActivity.this, Log.class);
+                startActivity(i);
+                finish();
             }
-        });
-    }
-    public void openActivityLog(){
-        Intent intent = new Intent(this, Log.class);
-        startActivity(intent);
+        }, timeout);
     }
 }
+
