@@ -36,21 +36,66 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
          String CREATE_TABELLA_UTENTE = "CREATE TABLE " + TABELLA_UTENTE + "("
-                + MAIL + "INTEGER PRIMARY KEY,"
-                + NOME + "TEXT NOT NULL,"
-                + COGNOME + "TEXT NOT NULL,"
-                + PASSWORD + "TEXT NOT NULL,"
-                + ALTEZZA + "NUMRO"
-                + SESSO + "TEXT"
-                + DATA_NASCITA + "DATA" + ")";
+                + MAIL + " INTEGER PRIMARY KEY,"
+                + ID_UTENTE + " NUMERO"
+                + NOME + " TEXT NOT NULL,"
+                + COGNOME + " TEXT NOT NULL,"
+                + PASSWORD + " TEXT NOT NULL,"
+                + ALTEZZA + " NUMERI"
+                + SESSO + " TEXT"
+                + DATA_NASCITA + " DATA" + ")";
+
+
+         String CREATE_TABELLA_NUTRIENTI = "CREATE TABLE " + TABELLA_NUTRIENTI + "("
+                 + ID_NUTRIENTI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + GRASSI_SATURI + " NUMERO"
+                 + FIBRE + " NUMERO "
+                 + PROTEINE + " NUMERO"
+                 + POTASSIO + " NUMERO"
+                 + FERRO + " NUMERO"
+                 + VITAMINA_A + " NUMERO"
+                 + VITAMINA_C + " NUMERO"
+                 + SODIO + " NUMERI"
+                 + ")";
+
+         String CREATE_TABELLA_ALIMENTI = "CREATE TABLE " + TABELLA_ALIMENTI + "("
+                 + ID_ALIMENTI + "TEXT PRIMARY KEY AUTOINCREMENT,"
+                 + INGREDIENTI + "TEXT "
+                 +CODICE_A_BARRE + "TEXT"
+                 + ")";
+
+         String CREATE_TABELLA_RISTORANTI = "CREATE TABLE " + TABELLA_RISTORANTI + "("
+                + ID_RISTORANTE + " TEXT PRIMARY KEY AUTOINCREMENT,"
+                + TIPOLOGIA_RISTORANTE + " TEXT"
+                + DESCRIZIONE + " TEXT"
+                + POSIZIONE_GPS + " TEXT"
+                + ")";
+
+         String CREATE_TABELLA_PREMI = "CREATE TABLE" + TABELLA_PREMI + "("
+                 + ID_PREMI + " TEXT PRIMARY KEY AUTOINCREMENT,"
+                 + QR_CODE + " NUMERI"
+                 + NOME_PREMIO + " TEXT"
+                 + PUNTEGGIO_PREMI + " NUMERO"
+                 + LIVELLO_PREMI + " NUMERO"
+                 + ")";
+
 
         sqLiteDatabase.execSQL(CREATE_TABELLA_UTENTE);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_NUTRIENTI);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_ALIMENTI);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_RISTORANTI);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_PREMI);
     }
 
 
     @Override
     public void onUpgrade (SQLiteDatabase db, int oldVersion, int newVersion){
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_UTENTE );
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_NUTRIENTI );
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_ALIMENTI );
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_RISTORANTI );
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_PREMI );
+
 
         onCreate(db);
     }
