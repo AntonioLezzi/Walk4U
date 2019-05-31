@@ -36,47 +36,46 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
          String CREATE_TABELLA_UTENTE = "CREATE TABLE " + TABELLA_UTENTE + "("
-                + MAIL + " TEXT PRIMARY KEY,"
-                + ID_UTENTE + " INTEGER"
-                + NOME + " TEXT NOT NULL,"
-                + COGNOME + " TEXT NOT NULL,"
-                + PASSWORD + " TEXT NOT NULL,"
-                + ALTEZZA + " NUMERI"
-                + SESSO + " TEXT"
-                + DATA_NASCITA + " DATA" + ")";
+                + MAIL + "TEXT PRIMARY KEY,"
+                + ID_UTENTE + "INTEGER"
+                + NOME + "TEXT NOT NULL,"
+                + COGNOME + "TEXT NOT NULL,"
+                + PASSWORD + "TEXT NOT NULL,"
+                + ALTEZZA + "NUMERI"
+                + SESSO + "TEXT"
+                + DATA_NASCITA + "DATA" + ")";
 
 
          String CREATE_TABELLA_NUTRIENTI = "CREATE TABLE " + TABELLA_NUTRIENTI + "("
-                 + ID_NUTRIENTI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                 + GRASSI_SATURI + " FLOAT"
-                 + FIBRE + " FLOAT "
-                 + PROTEINE + " FLOAT"
-                 + POTASSIO + " FLOAT"
-                 + FERRO + " FLOAT"
-                 + VITAMINA_A + " FLOAT"
-                 + VITAMINA_C + " FLOAT"
-                 + SODIO + " FLOAT"
-                 + ")";
+                 + ID_NUTRIENTI + "INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + GRASSI_SATURI + "FLOAT"
+                 + FIBRE + "FLOAT"
+                 + PROTEINE + "FLOAT"
+                 + POTASSIO + "FLOAT"
+                 + FERRO + "FLOAT"
+                 + VITAMINA_A + "FLOAT"
+                 + VITAMINA_C + "FLOAT"
+                 + SODIO + "FLOAT" + ")";
 
          String CREATE_TABELLA_ALIMENTI = "CREATE TABLE " + TABELLA_ALIMENTI + "("
                  + ID_ALIMENTI + "INTEGER PRIMARY KEY AUTOINCREMENT,"
-                 + INGREDIENTI + "TEXT "
+                 + INGREDIENTI + "TEXT"
                  +CODICE_A_BARRE + "INTEGER"
                  + ")";
 
          String CREATE_TABELLA_RISTORANTI = "CREATE TABLE " + TABELLA_RISTORANTI + "("
-                + ID_RISTORANTE + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + TIPOLOGIA_RISTORANTE + " TEXT"
-                + DESCRIZIONE + " TEXT"
-                + POSIZIONE_GPS + " INTEGER NOT NULL"
+                + ID_RISTORANTE + "INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + TIPOLOGIA_RISTORANTE + "TEXT"
+                + DESCRIZIONE + "TEXT"
+                + POSIZIONE_GPS + "INTEGER NOT NULL"
                 + ")";
 
          String CREATE_TABELLA_PREMI = "CREATE TABLE" + TABELLA_PREMI + "("
-                 + ID_PREMI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                 + QR_CODE + " NUMERI"
-                 + NOME_PREMIO + " TEXT NOT NULL,"
-                 + PUNTEGGIO_PREMI + " INTEGER NOT NULL,"
-                 + LIVELLO_PREMI + " INTEGER NOT NULL,"
+                 + ID_PREMI + "INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 + QR_CODE + "NUMERI"
+                 + NOME_PREMIO + "TEXT NOT NULL,"
+                 + PUNTEGGIO_PREMI + "INTEGER NOT NULL,"
+                 + LIVELLO_PREMI + "INTEGER NOT NULL,"
                  + ")";
 
 

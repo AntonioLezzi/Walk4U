@@ -12,7 +12,7 @@ package com.example.walk4you;
         import com.example.walk4you.Adapter.ContactDBAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    int timeout = 3000;
+    int timeout = 2000;
 
 
     @Override
