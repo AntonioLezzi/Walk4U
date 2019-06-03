@@ -80,10 +80,10 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
-        map.getUiSettings().setMyLocationButtonEnabled(false);
+        map.getUiSettings().setMyLocationButtonEnabled(true);
 
-        LatLng firenze = new LatLng(43.776366, 11.247822);
-        map.addMarker(new MarkerOptions().position(firenze).title("Siamo a Firenze!"));
+        LatLng firenze = new LatLng(45.773, 9.1815);
+        map.addMarker(new MarkerOptions().position(firenze).title("Siamo a MIlano!"));
         CameraPosition cameraPosition = new CameraPosition.Builder().target(firenze).zoom(15).build();
 
         map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
