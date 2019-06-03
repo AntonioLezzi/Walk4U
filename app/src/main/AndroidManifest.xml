@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Premi"></activity>
+        <activity android:name=".AggiungiCibo"></activity>
+        <activity android:name=".Premi" />
         <activity android:name=".Sonno" />
         <activity android:name=".Pasti" />
         <activity android:name=".infoAttivita" />
@@ -33,7 +34,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAofVMmqF7uf7y1cQIPOJ8mlW42ZAk9c4k"/>
+            android:value="AIzaSyAofVMmqF7uf7y1cQIPOJ8mlW42ZAk9c4k" />
     </application>
 
 </manifest>
