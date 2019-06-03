@@ -54,7 +54,7 @@
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/profilo" />
+                app:srcCompat="@drawable/profilo1" />
 
             <ImageView
                 android:id="@+id/imageViewpos1"
@@ -65,7 +65,7 @@
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/primopostoclassifica" />
+                app:srcCompat="@drawable/primopostoclassifica1" />
 
             <ImageView
                 android:id="@+id/imageViewsecondo"
@@ -87,7 +87,7 @@
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/terzoposto2" />
+                app:srcCompat="@drawable/terzoposto1" />
         </android.support.constraint.ConstraintLayout>
 
 

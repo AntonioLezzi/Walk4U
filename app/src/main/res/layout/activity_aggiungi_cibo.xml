@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AggiungiCibo">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sfondoazzurro"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="Alimenti"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="104dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Manzo"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="148dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Pane"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="196dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Insalata"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="192dp"
+                android:layout_marginEnd="8dp"
+                android:background="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="Colazione"
+                android:textColor="@color/colorPrimaryDarkLogin"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="54dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="96dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/storicopromozioni" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="104dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="19:30"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="104dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="1234"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="312dp"
+                android:layout_marginTop="104dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Kcal"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="244dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Frutta"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <ImageView
+                android:id="@+id/imageViewpPiu"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="308dp"
+                android:layout_marginTop="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                app:srcCompat="@drawable/aggiungi" />
+
+            <ImageButton
+                android:id="@+id/ImageButtonMeno1"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="308dp"
+                android:layout_marginTop="296dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/togli" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMeno2"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="308dp"
+                android:layout_marginTop="340dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/togli" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMeno3"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="308dp"
+                android:layout_marginTop="436dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/togli" />
+
+            <ImageButton
+                android:id="@+id/imageButtonMeno4"
+                android:layout_width="29dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="308dp"
+                android:layout_marginTop="388dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/togli" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="334dp"
+                android:layout_height="123dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="372dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                app:srcCompat="@drawable/consigli1" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+</ScrollView>
