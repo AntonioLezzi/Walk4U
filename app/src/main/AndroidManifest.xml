@@ -35,6 +35,7 @@
         <activity android:name=".infoAttivita"  android:screenOrientation="portrait"/>
         <activity android:name=".QRcode1"  android:screenOrientation="portrait"/>
         <activity android:name=".Livelli"  android:screenOrientation="portrait"/>
+        <activity android:name=".AggiungiCibo"  android:screenOrientation="portrait"/>
         <activity
             android:name=".Home"
             android:screenOrientation="portrait" />
