@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView38"
+                android:id="@+id/textViewData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -76,14 +76,28 @@
 
 
             <TextView
-                android:id="@+id/textView32"
+                android:id="@+id/textViewmedia1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="148dp"
                 android:layout_marginTop="212dp"
                 android:focusableInTouchMode="true"
                 android:fontFamily="@font/assistant_semibold"
-                android:text="80.25 di media"
+                android:text="80.25"
+                android:textColor="#218C8D"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="196dp"
+                android:layout_marginTop="212dp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="di media"
                 android:textColor="#218C8D"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +117,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/textViewPassiB"
                 android:layout_width="107dp"
                 android:layout_height="61dp"
                 android:layout_marginTop="108dp"
@@ -200,13 +214,26 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView42"
+                android:id="@+id/textViewOre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="152dp"
                 android:layout_marginTop="504dp"
                 android:fontFamily="@font/assistant_bold"
-                android:text="0:45:40 ore"
+                android:text="0:45:40"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="504dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="ore"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="23sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -239,10 +266,23 @@
                 android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="596dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="Km"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="152dp"
                 android:layout_marginTop="596dp"
                 android:fontFamily="@font/assistant_bold"
-                android:text="2.5 Km"
+                android:text="2.5"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="23sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -272,13 +312,26 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView46"
+                android:id="@+id/textViewKcal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="152dp"
                 android:layout_marginTop="684dp"
                 android:fontFamily="@font/assistant_bold"
-                android:text="150Kcal"
+                android:text="150"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="684dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="Kcal"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="23sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -308,13 +361,26 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView48"
+                android:id="@+id/textViewBPM1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="152dp"
-                android:layout_marginTop="776dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="772dp"
                 android:fontFamily="@font/assistant_bold"
-                android:text="75 bmp"
+                android:text="75"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="772dp"
+                android:fontFamily="@font/assistant_bold"
+                android:text="bmp"
                 android:textColor="@color/colorPrimaryLogin"
                 android:textSize="23sp"
                 app:layout_constraintStart_toStartOf="parent"

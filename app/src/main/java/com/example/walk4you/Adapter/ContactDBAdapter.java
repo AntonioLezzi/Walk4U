@@ -6,6 +6,8 @@ import android.database.ContentObservable;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.walk4you.Helper.DatabaseHelper;
 
@@ -14,26 +16,12 @@ import java.util.List;
 
 public class ContactDBAdapter {
 
-    private Context context;
     private SQLiteDatabase database;
     private DatabaseHelper dbHelper;
 
-    public ContactDBAdapter (Context context) {
-        this.context = context;
-    }
 
-    public ContactDBAdapter open() throws  SQLException {
-    dbHelper = new DatabaseHelper();
-    database = dbHelper.getWritableDatabase();
-
-    return this;
-    }
-
-    public void close() {
-            dbHelper.close();
-            database.close();
-        }
 
 }
+
 
 

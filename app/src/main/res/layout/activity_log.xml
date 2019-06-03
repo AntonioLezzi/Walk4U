@@ -45,7 +45,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/baloo_bhai"
-        android:text="@string/ben_tornato"
+        android:text="Ben tornato"
         android:textColor="@color/colorPrimaryLogin"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"

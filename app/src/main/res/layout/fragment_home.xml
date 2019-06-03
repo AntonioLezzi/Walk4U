@@ -100,23 +100,23 @@
                 app:layout_constraintVertical_bias="0.604" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewMedia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusableInTouchMode="true"
                 android:fontFamily="@font/assistant_semibold"
-                android:text="80.25 di media"
+                android:text="80.25"
                 android:textColor="#218C8D"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageViewcerchio"
                 app:layout_constraintEnd_toEndOf="@+id/imageViewcerchio"
-                app:layout_constraintHorizontal_bias="0.474"
+                app:layout_constraintHorizontal_bias="0.37"
                 app:layout_constraintStart_toStartOf="@+id/imageViewcerchio"
                 app:layout_constraintTop_toTopOf="@+id/imageViewcerchio"
-                app:layout_constraintVertical_bias="0.794" />
+                app:layout_constraintVertical_bias="0.813" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textViewData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -204,19 +204,34 @@
                 app:layout_constraintVertical_bias="0.602" />
 
             <TextView
-                android:id="@+id/textView14"
-                android:layout_width="47dp"
-                android:layout_height="21dp"
+                android:id="@+id/textViewKM"
+                android:layout_width="23dp"
+                android:layout_height="19dp"
                 android:fontFamily="@font/assistant_semibold"
-                android:text="2.5 Km"
+                android:text="Km"
                 android:textColor="@color/colorWhite"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageButtonInfo"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonInfo"
-                app:layout_constraintHorizontal_bias="0.241"
+                app:layout_constraintHorizontal_bias="0.304"
                 app:layout_constraintStart_toStartOf="@+id/imageButtonInfo"
                 app:layout_constraintTop_toTopOf="@+id/imageButtonInfo"
-                app:layout_constraintVertical_bias="0.74" />
+                app:layout_constraintVertical_bias="0.745" />
+
+            <TextView
+                android:id="@+id/textViewKM2"
+                android:layout_width="21dp"
+                android:layout_height="19dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="2.5"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonInfo"
+                app:layout_constraintEnd_toEndOf="@+id/imageButtonInfo"
+                app:layout_constraintHorizontal_bias="0.217"
+                app:layout_constraintStart_toStartOf="@+id/imageButtonInfo"
+                app:layout_constraintTop_toTopOf="@+id/imageButtonInfo"
+                app:layout_constraintVertical_bias="0.745" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -235,7 +250,7 @@
                 app:layout_constraintVertical_bias="0.305" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textInfoAtt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/assistant_semibold"
@@ -310,12 +325,29 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/assistant_semibold"
-                android:text="2354 Kcal"
+                android:text="Kcal"
                 android:textColor="@color/colorWhite"
                 android:textSize="45sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageButtonSonno"
                 app:layout_constraintEnd_toEndOf="@+id/imageButtonPasti"
-                app:layout_constraintHorizontal_bias="0.676"
+                app:layout_constraintHorizontal_bias="0.815"
+                app:layout_constraintStart_toStartOf="@+id/imageButtonPasti"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonInfo"
+                app:layout_constraintVertical_bias="0.373" />
+
+            <TextView
+                android:id="@+id/textViewKcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="2354"
+                android:textColor="@color/colorWhite"
+                android:textSize="45sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageButtonSonno"
+                app:layout_constraintEnd_toEndOf="@+id/imageButtonPasti"
+                app:layout_constraintHorizontal_bias="0.379"
                 app:layout_constraintStart_toStartOf="@+id/imageButtonPasti"
                 app:layout_constraintTop_toBottomOf="@+id/imageButtonInfo"
                 app:layout_constraintVertical_bias="0.386" />
@@ -406,7 +438,7 @@
                 app:srcCompat="@drawable/premi" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textViewPremi"
                 android:layout_width="128dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="48dp"
@@ -430,7 +462,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewPremi" />
 
             <TextView
                 android:id="@+id/textViewOtto"
@@ -483,6 +515,19 @@
                 android:text="3/24"
                 android:textColor="@color/colorWhite"
                 android:textSize="35sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="204dp"
+                android:layout_marginTop="176dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:text=" di media"
+                android:textColor="@color/colorPrimaryLogin"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
