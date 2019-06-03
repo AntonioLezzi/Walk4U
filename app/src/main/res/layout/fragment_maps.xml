@@ -53,9 +53,9 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <fragment
+        <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
-            android:name="com.google.android.gms.maps.MapFragment"
+            android:background="@color/colorPrimary"
             android:layout_width="415dp"
             android:layout_height="369dp"
             android:layout_marginStart="8dp"
