@@ -17,7 +17,7 @@ public class HolderInfoAtt extends RecyclerView.ViewHolder{
     TextView textViewKcal;
     TextView textViewBPM1;
 
-    public ContactDBAdapter (View itemView) {
+    public HolderInfoAtt (View itemView) {
         super(itemView);
 
         textViewPassiB = itemView.findViewById(R.id.textViewPassiB);

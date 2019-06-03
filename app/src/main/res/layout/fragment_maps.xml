@@ -52,9 +52,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.gms.maps.MapView
+
+        <fragment
             android:id="@+id/mapView"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:name="com.google.android.gms.maps.MapFragment"
             android:layout_width="415dp"
             android:layout_height="369dp"
             android:layout_marginStart="8dp"
@@ -62,7 +63,7 @@
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:context=".Mappa" />
+            app:layout_constraintTop_toTopOf="parent"/>
+
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

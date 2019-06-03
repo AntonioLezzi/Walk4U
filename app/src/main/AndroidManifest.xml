@@ -32,7 +32,6 @@
         </activity>
 
         <meta-data
-            android:resource="@array/preloaded_fonts"
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAofVMmqF7uf7y1cQIPOJ8mlW42ZAk9c4k"/>
     </application>

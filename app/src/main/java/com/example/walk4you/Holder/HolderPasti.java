@@ -6,8 +6,7 @@ import android.widget.TextView;
 
 import com.example.walk4you.R;
 
-public class HolderPasti extends RecyclerView.ViewHolder {
-
+    public class HolderPasti extends RecyclerView.ViewHolder {
 
     TextView textViewKalBru;
     TextView textViewCalAss;
@@ -20,7 +19,7 @@ public class HolderPasti extends RecyclerView.ViewHolder {
     TextView textViewVitamineG;
 
 
-    public ContactDBAdapter (View itemView) {
+    public HolderPasti (View itemView) {
         super(itemView);
 
         textViewKalBru = itemView.findViewById(R.id.textViewKalBru);

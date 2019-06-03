@@ -16,7 +16,7 @@ import  com.example.walk4you.R;
      TextView textViewKcal;
      TextView textViewPremi;
 
-     public ContactDBAdapter (View itemView) {
+     public HolderHome (View itemView) {
          super(itemView);
 
          textViewPuntiBig = itemView.findViewById(R.id.textViewPuntiBig);

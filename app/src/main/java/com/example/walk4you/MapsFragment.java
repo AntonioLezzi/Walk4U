@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
@@ -18,7 +19,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class MapsFragment extends Fragment {
+public class MapsFragment extends Fragment implements OnMapReadyCallback {
+
+    private GoogleMap mMap;
 
     private OnFragmentInteractionListener mListener;
 
@@ -37,7 +40,9 @@ public class MapsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_maps, container, false);
+        View v =  inflater.inflate(R.layout.fragment_maps, container, false);
+
+        return v;
     }
 
     @Override
@@ -45,6 +50,9 @@ public class MapsFragment extends Fragment {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
+
+            MapFragment mapFragment = (MapFragment) getActivity().getFragmentManager().findFragmentById(R.id.mapView);
+            mapFragment.getMapAsync(this);
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -55,6 +63,17 @@ public class MapsFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        LatLng firenze = new LatLng(43.776366, 11.247822);
+        mMap.addMarker(new MarkerOptions().position(firenze).title("Siamo a Firenze!"));
+        CameraPosition cameraPosition = new CameraPosition.Builder().target(firenze).zoom(15).build();
+
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 }
 
