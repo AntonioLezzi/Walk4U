@@ -38,7 +38,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textViewData"
+                android:id="@+id/textViewData12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -132,7 +132,7 @@
                 app:srcCompat="@drawable/cerchioparametri" />
 
             <TextView
-                android:id="@+id/textView56"
+                android:id="@+id/textViewKalBru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
@@ -157,7 +157,7 @@
                 app:srcCompat="@drawable/cerchiocrediti" />
 
             <TextView
-                android:id="@+id/textView54"
+                android:id="@+id/textViewCalAss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -196,7 +196,7 @@
                 app:layout_constraintTop_toTopOf="@+id/CerchioParametriSX" />
 
             <TextView
-                android:id="@+id/textViewsettantacinque"
+                android:id="@+id/textViewPeso"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="52dp"
@@ -361,7 +361,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView73"
+                android:id="@+id/textViewZuccheroG"
                 android:layout_width="36dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="140dp"
@@ -374,7 +374,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view8" />
 
             <TextView
-                android:id="@+id/textView78"
+                android:id="@+id/TextViewProtG"
                 android:layout_width="36dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="100dp"
@@ -387,7 +387,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view8" />
 
             <TextView
-                android:id="@+id/textView75"
+                android:id="@+id/TextViewGrassiG"
                 android:layout_width="36dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="176dp"
@@ -400,7 +400,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view8" />
 
             <TextView
-                android:id="@+id/textView76"
+                android:id="@+id/textViewCarbG"
                 android:layout_width="36dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="56dp"
@@ -413,7 +413,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/view8" />
 
             <TextView
-                android:id="@+id/textView77"
+                android:id="@+id/textViewVitamineG"
                 android:layout_width="36dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="212dp"

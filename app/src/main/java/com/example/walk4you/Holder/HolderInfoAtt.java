@@ -22,7 +22,7 @@ public class HolderInfoAtt extends RecyclerView.ViewHolder{
 
         textViewPassiB = itemView.findViewById(R.id.textViewPassiB);
         textViewmedia1 = itemView.findViewById(R.id.textViewmedia1);
-        textViewData = itemView.findViewById(R.id.textViewData);
+        textViewData = itemView.findViewById(R.id.textViewData12);
         textViewN250 = itemView.findViewById(R.id.textViewN250);
         textViewOre = itemView.findViewById(R.id.textViewOre);
         textViewKm = itemView.findViewById(R.id.textViewKm);

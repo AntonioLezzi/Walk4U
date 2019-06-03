@@ -2,8 +2,6 @@ package com.example.walk4you.Holder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import  com.example.walk4you.R;
@@ -23,7 +21,7 @@ import  com.example.walk4you.R;
 
          textViewPuntiBig = itemView.findViewById(R.id.textViewPuntiBig);
          textViewMedia = itemView.findViewById(R.id.textViewMedia);
-         textViewData = itemView.findViewById(R.id.textViewData);
+         textViewData = itemView.findViewById(R.id.textViewData12);
          textInfoAtt = itemView.findViewById(R.id.textInfoAtt);
          textViewKM2 = itemView.findViewById(R.id.textViewKM2);
          textViewKcal = itemView.findViewById(R.id.textViewKcal);
