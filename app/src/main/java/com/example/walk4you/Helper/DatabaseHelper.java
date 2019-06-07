@@ -43,12 +43,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + ")";
 
     String CREATE_TABELLA_RISTORANTI = "CREATE TABLE " + TABELLA_RISTORANTI + "("
-            + ID_RISTORANTE + "INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + NOME_RISTORANTE + " TEXT"
-            + TIPOLOGIA_RISTORANTE + " TEXT"
-            + DESCRIZIONE + " TEXT,"
-            + POSIZIONE_GPS_LAT + "INTEGER NOT NULL "
-            + POSIZIONE_GPS_LONG + "INTEGER NOT NULL"
+            + ID_RISTORANTE + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + NOME_RISTORANTE + " TEXT, "
+            + TIPOLOGIA_RISTORANTE + " TEXT, "
+            + DESCRIZIONE + " TEXT, "
+            + POSIZIONE_GPS_LAT + " INTEGER NOT NULL, "
+            + POSIZIONE_GPS_LONG + " INTEGER NOT NULL "
             + ")";
 
     String CREATE_TABELLA_PREMI = "CREATE TABLE " + TABELLA_PREMI + "("

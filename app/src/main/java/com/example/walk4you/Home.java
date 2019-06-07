@@ -4,11 +4,12 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-public class Home extends FragmentActivity implements OnFragmentInteractionListener {
+public class Home extends AppCompatActivity implements OnFragmentInteractionListener {
 
     private BottomNavigationView mMainNav;
     private FrameLayout mMainFrame;

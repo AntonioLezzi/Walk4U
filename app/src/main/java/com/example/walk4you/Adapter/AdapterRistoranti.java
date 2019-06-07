@@ -57,8 +57,15 @@ public class AdapterRistoranti {
     public boolean deleteContact (long contactID) {
         return database.delete(TABELLA_RISTORANTI, ID_RISTORANTE + "="+ contactID, null)>0;
     }
+
+
+    //fetch all contacts
+    public Cursor fetchAllRistoranti() {
+        return database.query(TABELLA_RISTORANTI, new String[] {
+                ID_RISTORANTE, DESCRIZIONE, POSIZIONE_GPS_LAT, POSIZIONE_GPS_LONG,}, null, null, null, null, null);
+    }
 //fetch contact filtrer by string
-    public Cursor fetchContactByFilter(String filter) {
+    public Cursor fetchRistoranteByFilter(String filter) {
         Cursor mCursor = database.query (true, TABELLA_RISTORANTI, new String[] {
                 ID_RISTORANTE, DESCRIZIONE, POSIZIONE_GPS_LAT, POSIZIONE_GPS_LONG,},
         ID_RISTORANTE + "like '%" + filter + "%'", null, null, null, null, null);
