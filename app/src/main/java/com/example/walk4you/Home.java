@@ -4,11 +4,11 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-public class Home extends AppCompatActivity implements OnFragmentInteractionListener {
+public class Home extends FragmentActivity implements OnFragmentInteractionListener {
 
     private BottomNavigationView mMainNav;
     private FrameLayout mMainFrame;
@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity implements OnFragmentInteractionList
         mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
         mMainNav.setSelectedItemId(R.id.Nav_Home);
 
-        getFragmentManager().beginTransaction().add(R.id.main_frame, fragmentHome).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.main_frame, fragmentHome).commit();
 
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -42,15 +42,15 @@ public class Home extends AppCompatActivity implements OnFragmentInteractionList
                 switch (Item.getItemId()) {
 
                     case R.id.Nav_Social:
-                        getFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentSocial).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentSocial).commit();
                         return true;
 
                     case R.id.Nav_Home:
-                        getFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentHome).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentHome).commit();
                         return true;
 
                     case R.id.Nav_Maps:
-                        getFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentMaps).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, fragmentMaps).commit();
                         return true;
 
                     default:
