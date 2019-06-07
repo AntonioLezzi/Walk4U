@@ -7,11 +7,14 @@ import java.util.Date;
 public class Ristorante {
 
     private int id_ristorante;
+    private String nomeRistorante;
     private double latitudine;
     private double longitudine;
     private String tipologia;
 
-    public String getTipologia() { return tipologia; }
+    public String getTipologia() {
+        return tipologia;
+    }
 
     public void setTipologia(String tipologia) {
         this.tipologia = tipologia;
@@ -33,11 +36,9 @@ public class Ristorante {
         this.latitudine = latitudine;
     }
 
-    public int getId_ristorante() {
-        return id_ristorante;
+    public String getNomeRistorante() { return nomeRistorante;
     }
-
-    public void setId_ristorante(int id_ristorante) {
-        this.id_ristorante = id_ristorante;
+    public void setNomeRistorante(String nomeRistorante) { this.nomeRistorante = nomeRistorante;
     }
 }
+

@@ -45,7 +45,7 @@ public class CircleTimerView extends View {
     private static final float DEFAULT_GAP_BETWEEN_CIRCLE_AND_LINE = 30;
     private static final float DEFAULT_NUMBER_SIZE = 30;
     private static final float DEFAULT_LINE_WIDTH = 0.5f;
-    private static final float DEFAULT_CIRCLE_BUTTON_RADIUS =10;
+    private static final float DEFAULT_CIRCLE_BUTTON_RADIUS =12;
     private static final float DEFAULT_CIRCLE_STROKE_WIDTH = 1;
     private static final float DEFAULT_TIMER_NUMBER_SIZE = 38;
     private static final float DEFAULT_TIMER_TEXT_SIZE = 18;

@@ -44,17 +44,17 @@ public class AdapterRistoranti {
         return values;
     }
 // create a contact
-    public long createContact (String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long){
+    public long createContactRistoranti (String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long){
         ContentValues initialValues = createContentVAlues(tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
         return  database.insertOrThrow(TABELLA_RISTORANTI, null, initialValues);
     }
 //upadate contact
-    public boolean updateContact (long contactID, String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long ){
+    public boolean updateContactRistoranti (long contactID, String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long ){
         ContentValues updateValues = createContentVAlues(tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
         return database.update (TABELLA_RISTORANTI, updateValues,ID_RISTORANTE + "=" + contactID , null ) >0;
     }
 // delete a contact
-    public boolean deleteContact (long contactID) {
+    public boolean deleteContactRistoranti (long contactID) {
         return database.delete(TABELLA_RISTORANTI, ID_RISTORANTE + "="+ contactID, null)>0;
     }
 

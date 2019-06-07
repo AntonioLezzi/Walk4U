@@ -7,7 +7,7 @@ import com.example.walk4you.Adapter.AdapterUtente;
 public class Constants {
 
     //tabella utente
-    public static final String TABELLA_UTENTE  = "Utente";
+    public static final String TABELLA_UTENTE  = "tabella_utente";
     public static final String MAIL = "mail";
     public static final String NOME = "nome";
     public static final String COGNOME = "cognome";
@@ -35,7 +35,7 @@ public class Constants {
     public static final String TABELLA_ALIMENTI = "alimenti";
     public static final String ID_ALIMENTI = "id_alimenti";
     public static final String INGREDIENTI = "ingredienti";
-    public static final String CODICE_A_BARRE = "codice a barre";
+    public static final String CODICE_A_BARRE = "codice_barre";
 
     // Ristoranti
     public static final String TABELLA_RISTORANTI = "ristorante";
