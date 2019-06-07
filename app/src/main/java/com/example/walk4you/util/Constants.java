@@ -1,5 +1,9 @@
 package com.example.walk4you.util;
 
+import android.content.Context;
+
+import com.example.walk4you.Adapter.AdapterUtente;
+
 public class Constants {
 
     //tabella utente
@@ -35,10 +39,12 @@ public class Constants {
 
     // Ristoranti
     public static final String TABELLA_RISTORANTI = "ristorante";
-    public static final String ID_RISTORANTE= "id_ristorante";
-    public static final String TIPOLOGIA_RISTORANTE = "tipologia ristorante";
+    public static final String ID_RISTORANTE = "id_ristorante";
+    public static final String NOME_RISTORANTE = "Nome_ristorante";
+    public static final String TIPOLOGIA_RISTORANTE = "tipologia_ristorante";
     public static final String DESCRIZIONE = "descrizione";
-    public static final String POSIZIONE_GPS = "posizione gps";       // non sono sicuro funzioni così
+    public static final String POSIZIONE_GPS_LAT= "posizione_gps_lat";
+    public static final String POSIZIONE_GPS_LONG= "posizione_gps_long";
 
     //premi
     public static final String TABELLA_PREMI = "premi";

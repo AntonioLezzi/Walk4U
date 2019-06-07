@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Pasti extends AppCompatActivity {
-
     private ImageButton imageButton2;
 
     @Override

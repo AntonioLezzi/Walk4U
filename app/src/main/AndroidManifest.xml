@@ -29,12 +29,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAofVMmqF7uf7y1cQIPOJ8mlW42ZAk9c4k"/>
 
-        <activity android:name=".Premi"></activity>
-        <activity android:name=".Sonno" />
-        <activity android:name=".Pasti" />
-        <activity android:name=".infoAttivita" />
-        <activity android:name=".QRcode1" />
-        <activity android:name=".Livelli" />
+        <activity android:name=".Premi"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".Sonno" android:screenOrientation="portrait"/>
+        <activity android:name=".Pasti"  android:screenOrientation="portrait"/>
+        <activity android:name=".infoAttivita"  android:screenOrientation="portrait"/>
+        <activity android:name=".QRcode1"  android:screenOrientation="portrait"/>
+        <activity android:name=".Livelli"  android:screenOrientation="portrait"/>
+        <activity android:name=".AggiungiCibo"  android:screenOrientation="portrait"/>
         <activity
             android:name=".Home"
             android:screenOrientation="portrait" />
