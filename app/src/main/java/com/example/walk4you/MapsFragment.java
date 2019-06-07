@@ -82,11 +82,12 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
         map = googleMap;
         map.getUiSettings().setMyLocationButtonEnabled(true);
 
-        LatLng firenze = new LatLng(45.773, 9.1815);
-        map.addMarker(new MarkerOptions().position(firenze).title("Siamo a MIlano!"));
-        CameraPosition cameraPosition = new CameraPosition.Builder().target(firenze).zoom(15).build();
+        LatLng Milano = new LatLng(45.773, 9.1815);
+        map.addMarker(new MarkerOptions().position(Milano).title("Siamo a MIlano!"));
+        CameraPosition cameraPosition = new CameraPosition.Builder().target(Milano).zoom(12).build();
 
         map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
     }
 }
 
