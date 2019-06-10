@@ -21,13 +21,13 @@ public class Constants {
     // tabella nutrienti
     public static final String TABELLA_NUTRIENTI = "Nutrienti";
     public static final String ID_NUTRIENTI = "id_nutrienti";
-    public static final String GRASSI_SATURI = "Grassi sauri";
+    public static final String GRASSI_SATURI = "Grassi_sauri";
     public static final String FIBRE = "fibre";
     public static final String PROTEINE = "proteine";
     public static final String POTASSIO = "potassio";
     public static final String FERRO = "ferro";
-    public static final String VITAMINA_A = "vitamia A";
-    public static final String VITAMINA_C = "vitamina C";
+    public static final String VITAMINA_A = "vitamia_A";
+    public static final String VITAMINA_C = "vitamina_C";
     public static final String SODIO = "sodio";
 
 
@@ -49,10 +49,10 @@ public class Constants {
     //premi
     public static final String TABELLA_PREMI = "premi";
     public static final String ID_PREMI = "id_premo";
-    public static final String QR_CODE = "codice QR";
-    public static final String NOME_PREMIO = "Nome Premio";
-    public static final String PUNTEGGIO_PREMI = "punteggio premi";
-    public static final String LIVELLO_PREMI = "livello premi";
+    public static final String QR_CODE = "codice_QR";
+    public static final String NOME_PREMIO = "Nome_Premio";
+    public static final String PUNTEGGIO_PREMI = "punteggio_premi";
+    public static final String LIVELLO_PREMI = "livello_premi";
 
 }
 
