@@ -16,6 +16,7 @@ import static com.example.walk4you.util.Constants.COGNOME;
 import static com.example.walk4you.util.Constants.ALTEZZA;
 import static com.example.walk4you.util.Constants.PASSWORD;
 import static com.example.walk4you.util.Constants.SESSO;
+import static com.example.walk4you.util.Constants.PESO;
 import static com.example.walk4you.util.Constants.DATA_NASCITA;
 import static com.example.walk4you.util.Constants.TABELLA_UTENTE;
 
@@ -39,7 +40,7 @@ public class AdapterUtente {
         dbHelper.close();
     }
 
-    private ContentValues createContentVAlues (String mail ,String nome , String cognome, String password, String altezza, String sesso, String data_nascita) {
+    private ContentValues createContentVAlues (String mail ,String nome , String cognome, String password, String altezza, String sesso, String peso, String data_nascita) {
         ContentValues values = new ContentValues();
         values.put (MAIL, mail);
         values.put (NOME, nome);
@@ -47,19 +48,20 @@ public class AdapterUtente {
         values.put(PASSWORD, password );
         values.put (ALTEZZA, altezza);
         values.put (SESSO, sesso);
+        values.put(PESO, peso);
         values.put (DATA_NASCITA, data_nascita);
 
 
         return values;
     }
     // create a contact
-    public long createContactUtente (String mail ,String nome , String cognome, String password, String altezza, String sesso, String data_nascita){
-        ContentValues initialValues = createContentVAlues(mail, nome, cognome, password, altezza, sesso, data_nascita);
+    public long createContactUtente (String mail ,String nome , String cognome, String password, String altezza, String peso, String sesso, String data_nascita){
+        ContentValues initialValues = createContentVAlues(mail, nome, cognome, password, altezza, sesso, peso, data_nascita);
         return  database.insertOrThrow(TABELLA_UTENTE, null, initialValues);
     }
     //upadate contact
-    public boolean updateContactUtente (long contactID, String mail ,String nome , String cognome, String password, String altezza, String sesso, String data_nascita){
-        ContentValues updateValues = createContentVAlues(mail, nome, cognome, password, altezza, sesso, data_nascita);
+    public boolean updateContactUtente (long contactID, String mail ,String nome , String cognome, String password, String peso, String altezza, String sesso, String data_nascita){
+        ContentValues updateValues = createContentVAlues(mail, nome, cognome, password, altezza, peso, sesso, data_nascita);
         return database.update (TABELLA_UTENTE, updateValues,ID_UTENTE + "=" + contactID , null ) >0;
     }
     // delete a contact
@@ -71,12 +73,12 @@ public class AdapterUtente {
     //fetch all contacts
     public Cursor fetchAllUtente() {
         return database.query(TABELLA_UTENTE, new String[] {
-                ID_UTENTE, MAIL, NOME, COGNOME, PASSWORD, ALTEZZA, SESSO, DATA_NASCITA}, null, null, null, null, null, null);
+                ID_UTENTE, MAIL, NOME, COGNOME, PASSWORD, ALTEZZA, SESSO, DATA_NASCITA, PESO}, null, null, null, null, null, null);
     }
     //fetch contact filtrer by string
     public Cursor fetchUtenteByFilter(String filter) {
         Cursor mCursor = database.query (true, TABELLA_UTENTE, new String[] {
-                        ID_UTENTE, MAIL, NOME, COGNOME, PASSWORD, ALTEZZA, SESSO, DATA_NASCITA,},
+                        ID_UTENTE, MAIL, NOME, COGNOME, PASSWORD, ALTEZZA, SESSO, DATA_NASCITA, PESO},
                 ID_UTENTE + "like '%" + filter + "%'", null, null, null, null, null);
         return mCursor;
     }

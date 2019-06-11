@@ -13,6 +13,7 @@ public class Constants {
     public static final String COGNOME = "cognome";
     public static final String PASSWORD = "password";
     public static final String ALTEZZA = "altezza";
+    public static final String PESO = "peso";
     public static final String SESSO = "Sesso";
     public static final String DATA_NASCITA ="data nascita";
     public static final String ID_UTENTE = "id_utente";

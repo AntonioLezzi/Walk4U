@@ -110,6 +110,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                 criteria.setAccuracy(Criteria.ACCURACY_COARSE);
                 String provider = lm.getBestProvider(criteria, true);
                 myLocation = lm.getLastKnownLocation(provider);
+
             }
 
             if(myLocation!=null){
