@@ -52,11 +52,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + ")";
 
     String CREATE_TABELLA_PREMI = "CREATE TABLE " + TABELLA_PREMI + "("
-            + ID_PREMI + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + ID_PREMI + " INTEGER PRIMARY KEY AUTOINCREMENT, "
             + QR_CODE + " TEXT,"
             + NOME_PREMIO + " TEXT NOT NULL,"
             + PUNTEGGIO_PREMI + " INTEGER NOT NULL,"
             + LIVELLO_PREMI + " INTEGER NOT NULL"
+            + ")";
+
+    String CREATE_TABELLA_ATTIVITA = "CREATE TABLE " + TABELLA_ATTIVITA + "("
+            + ID_ATTIVITA + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + NUMERO_PASSO + " INTEGER, "
+            + DATA_INIZIO_ATT + " DATE NOT NULL, "
+            + DATA_FINE_ATT + " DATE NOT NULL, "
+            + ORE_SONNO + " DATE, "
+            + KM + " INTEGER, "
+            + KCAL_BRUCIATE + " INTEGER "
+            + ")";
+
+    String CREATE_TABELLA_PASTI = "CREATE TABLE " + TABELLA_PASTI + "("
+            + ID_PASTO + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + CENA + " INTEGER, "
+            + COLAZIONE + " INTEGER, "
+            + PRANZO + " INTEGER, "
+            + SPUNTINO + " INTEGER, "
+            + DATA_INIZIO + " DATE, "
+            + DATA_FINE + " DATE, "
+            + ALIMENTO + " STRING "
+            + ")";
+
+    String CREATE_TABELLA_PARAMETRI = "CREATE TABLE " + TABELLA_PARAMETRI + "("
+            + ID_PARAMETRI + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + BATTITO_CARDIACO + " INTEGER, "
+            + SATURAZIONE_OSSIGENO + "INTEGER "
             + ")";
 
 
@@ -79,6 +106,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(CREATE_TABELLA_ALIMENTI);
         sqLiteDatabase.execSQL(CREATE_TABELLA_RISTORANTI);
         sqLiteDatabase.execSQL(CREATE_TABELLA_PREMI);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_ATTIVITA);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_PASTI);
+        sqLiteDatabase.execSQL(CREATE_TABELLA_PARAMETRI);
     }
 
 
@@ -89,6 +119,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_ALIMENTI );
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_RISTORANTI );
         db.execSQL("DROP TABLE IF EXISTS " + TABELLA_PREMI );
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_ATTIVITA);
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_PASTI);
+        db.execSQL("DROP TABLE IF EXISTS " + TABELLA_PARAMETRI);
 
 
         onCreate(db);

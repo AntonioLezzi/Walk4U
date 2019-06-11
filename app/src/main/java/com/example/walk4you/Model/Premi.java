@@ -1,12 +1,17 @@
 package com.example.walk4you.Model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 public class Premi {
 
+    @SerializedName("id_premio")
     private int id_premio;
+    @SerializedName("nome")
     private String nome;
+    @SerializedName("numero_crediti")
     private int numero_crediti;
 
     //Qr code

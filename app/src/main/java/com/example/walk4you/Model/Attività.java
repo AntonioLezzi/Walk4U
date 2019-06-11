@@ -1,17 +1,26 @@
 package com.example.walk4you.Model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 
 public class Attività {
 
+    @SerializedName("id_attività")
     private int id_attività;
+    @SerializedName("numero_passi")
     private int numero_passi;
+    @SerializedName("data_inizio")
     private Date data_inizio;
+    @SerializedName("data_fine")
     private Date data_fine;
+    @SerializedName("ore_sonno")
     private double ore_sonno;
+    @SerializedName("Km")
     private double Km;
+    @SerializedName("Kcal_bruciate")
     private int Kcal_bruciate;
 
 

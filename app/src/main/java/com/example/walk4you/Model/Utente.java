@@ -1,20 +1,31 @@
 package com.example.walk4you.Model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 
 
 public class Utente {
 
+    @SerializedName("mail")
     private String mail;
+    @SerializedName("mail")
     private String nome;
+    @SerializedName("mail")
     private String cognome;
+    @SerializedName("mail")
     private float altezza;
+    @SerializedName("mail")
     private String password;
+    @SerializedName("mail")
     private boolean sesso_femminile;
+    @SerializedName("mail")
     private Date data_di_nascita;
+    @SerializedName("mail")
     private int punteggio_utente;
+    @SerializedName("mail")
     private int livello_utente;
 
     public int getLivello_utente() { return livello_utente; }

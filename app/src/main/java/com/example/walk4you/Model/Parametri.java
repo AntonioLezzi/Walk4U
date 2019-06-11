@@ -1,24 +1,25 @@
 package com.example.walk4you.Model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 
 public class Parametri {
 
+    @SerializedName("id_parametri")
     private int id_parametri;
+    @SerializedName("peso")
     private int peso;
+    @SerializedName("battito_cardiaco")
     private int battito_cardiaco;
-    private double latitudine;
-    private double longitudine;
+    @SerializedName("Saturazione_ossigeno")
+    private int Saturazione_ossigeno;
 
-    public double getLatitudine() { return latitudine; }
+    public int getSaturazione_ossigeno() {return Saturazione_ossigeno; }
 
-    public void setLatitudine(double latitudine) { this.latitudine = latitudine; }
-
-    public double getLongitudine() { return longitudine; }
-
-    public void setLongitudine(double longitudine) { this.longitudine = longitudine; }
+    public void setSaturazione_ossigeno(int saturazione_ossigeno) {Saturazione_ossigeno = saturazione_ossigeno; }
 
     public int getBattito_cardiaco() {
         return battito_cardiaco;

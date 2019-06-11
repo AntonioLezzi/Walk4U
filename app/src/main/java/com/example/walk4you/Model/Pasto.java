@@ -1,19 +1,29 @@
 package com.example.walk4you.Model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 
 
 public class Pasto {
 
+    @SerializedName("id_pasto")
     private int id_pasto;
+    @SerializedName("cena")
     private boolean cena;
+    @SerializedName("colazione")
     private boolean colazione;
+    @SerializedName("pranzo")
     private boolean pranzo;
+    @SerializedName("spuntino")
     private boolean spuntino;
+    @SerializedName("data_inizio")
     private Date data_inizio;
+    @SerializedName("data_fine")
     private Date data_fine;
+    @SerializedName("alimento")
     private String alimento;
 
     public int getId_pasto() {

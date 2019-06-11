@@ -34,23 +34,24 @@ public class AdapterRistoranti {
         dbHelper.close();
     }
 
-    private ContentValues createContentVAlues (String tipologia_ristorante , String descrizione, String posizione_gps_lat, String posizione_gps_long) {
+    private ContentValues createContentVAlues (String id_ristorante, String tipologia_ristorante , String descrizione, String posizione_gps_lat, String posizione_gps_long) {
         ContentValues values = new ContentValues();
         values.put (TIPOLOGIA_RISTORANTE, tipologia_ristorante);
         values.put (DESCRIZIONE, descrizione);
         values.put (POSIZIONE_GPS_LAT, posizione_gps_lat);
         values.put (POSIZIONE_GPS_LONG, posizione_gps_long);
+        values.put (ID_RISTORANTE, id_ristorante);
 
         return values;
     }
 // create a contact
-    public long createContactRistoranti (String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long){
-        ContentValues initialValues = createContentVAlues(tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
+    public long createContactRistoranti (String id_ristorante,String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long){
+        ContentValues initialValues = createContentVAlues(id_ristorante, tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
         return  database.insertOrThrow(TABELLA_RISTORANTI, null, initialValues);
     }
 //upadate contact
-    public boolean updateContactRistoranti (long contactID, String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long ){
-        ContentValues updateValues = createContentVAlues(tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
+    public boolean updateContactRistoranti (long contactID, String id_ristorante, String tipologia_ristorante, String descrizione, String posizione_gps_lat, String posizione_gps_long ){
+        ContentValues updateValues = createContentVAlues(id_ristorante, tipologia_ristorante, descrizione, posizione_gps_lat, posizione_gps_long);
         return database.update (TABELLA_RISTORANTI, updateValues,ID_RISTORANTE + "=" + contactID , null ) >0;
     }
 // delete a contact
