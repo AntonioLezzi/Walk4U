@@ -13,8 +13,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 
     <application
@@ -27,7 +25,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAofVMmqF7uf7y1cQIPOJ8mlW42ZAk9c4k"/>
+            android:value="AIzaSyCkrphZ_7SwdFvhjH69KpjQjRz8cQCY58Q"/>
 
         <activity android:name=".Premi"  android:screenOrientation="portrait"></activity>
         <activity android:name=".Sonno" android:screenOrientation="portrait"/>
