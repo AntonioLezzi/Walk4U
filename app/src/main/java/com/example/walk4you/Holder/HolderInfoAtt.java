@@ -1,10 +1,10 @@
 package com.example.walk4you.Holder;
 
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.TextView;
+        import android.support.v7.widget.RecyclerView;
+        import android.view.View;
+        import android.widget.TextView;
 
-import com.example.walk4you.R;
+        import com.example.walk4you.R;
 
 public class HolderInfoAtt extends RecyclerView.ViewHolder{
 
