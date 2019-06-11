@@ -4,6 +4,9 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -91,12 +94,29 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.getUiSettings().setMyLocationButtonEnabled(true);
-        if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
+
+        if (ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(),new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+        }else{
+            if(!mMap.isMyLocationEnabled())
+                mMap.setMyLocationEnabled(true);
+
+            LocationManager lm = (LocationManager)getActivity().getSystemService(Context.LOCATION_SERVICE);
+            Location myLocation = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+            if (myLocation == null) {
+                Criteria criteria = new Criteria();
+                criteria.setAccuracy(Criteria.ACCURACY_COARSE);
+                String provider = lm.getBestProvider(criteria, true);
+                myLocation = lm.getLastKnownLocation(provider);
+            }
+
+            if(myLocation!=null){
+                LatLng userLocation = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 14), 1500, null);
+            }
         }
-        mMap.setMyLocationEnabled(true);
 
         AdapterRistoranti ar = new AdapterRistoranti(getActivity());
         ar.open();
@@ -109,14 +129,11 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
                 double lat = ristoCursor.getDouble(ristoCursor.getColumnIndex(POSIZIONE_GPS_LAT));
                 double lng = ristoCursor.getDouble(ristoCursor.getColumnIndex(POSIZIONE_GPS_LONG));
 
-                LatLng firenze = new LatLng(lat, lng);
-                mMap.addMarker(new MarkerOptions().position(firenze).title(nome));
+                LatLng loc = new LatLng(lat, lng);
+                mMap.addMarker(new MarkerOptions().position(loc).title(nome));
 
             } while (ristoCursor.moveToNext());
         }
-
-        /*CameraPosition cameraPosition = new CameraPosition.Builder().target(firenze).zoom(15).build();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));*/
     }
 }
 
